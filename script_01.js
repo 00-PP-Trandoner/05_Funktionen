@@ -67,17 +67,38 @@ function ausgabeNamenParams(firstName, familyName) {
 
 // SRP single responsibility principleb
 
-ausgabeNamenParams2("Max","Mütze");
+// ausgabeNamenParams2("Max","Mütze");
 
 function ausgabeNamenParams2(firstName, familyName){
 
-    //1. Funktionalität: string composing
+    
+    // 2. Funktionalität: string output 
+    console.log(outputStr);
+}
+
+/***** Funktionen 03b *****/
+// 03b Funktionalitäten --> Funktionen| return
+  
+   //1. Funktionalität: string composing
+  
+   output(getString("Max","Mütze"));
+   output(getString(prompt("Vorname?"),prompt("Name?")));
+   
+   /** INPUT-Return --- OUTPUT-Return **/
+   function getString(firstName, familyName){;
     const GAP = "  ";
     let outputStr = "Hallo " + GAP + firstName + GAP + familyName + "!"
-    // console.log("Hallo " + firstName + " " + familyName + "!");
+    return outputStr; // Daten werden an den Orts des Calls geschickt   !!! 
+   }
+   // console.log("Hallo " + firstName + " " + familyName + "!");
 
     // 2. Funktionalität: string output 
-
-    console.log(outputStr);
-
-}
+    // output("Hi");
+    // output(4);
+    // output(true);
+        function output(outputData) {
+        console.log(outputData);
+    }
+// function output(params) {
+    
+// }
