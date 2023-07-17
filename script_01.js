@@ -85,18 +85,20 @@ function ausgabeNamenParams2(firstName, familyName){
    output(getString(prompt("Vorname?"),prompt("Name?")));
    
    /** INPUT-Return --- OUTPUT-Return **/
-   function getString(firstName, familyName){;
+function getString(firstName, familyName){;
     const GAP = "  ";
     let outputStr = "Hallo " + GAP + firstName + GAP + familyName + "!"
     return outputStr; // Daten werden an den Orts des Calls geschickt   !!! 
-   }
+    console.log("Hi"); // reurtn bricht die Fkt ab!
+}
+
    // console.log("Hallo " + firstName + " " + familyName + "!");
 
     // 2. Funktionalität: string output 
     // output("Hi");
     // output(4);
     // output(true);
-        function output(outputData) {
+    function output(outputData) {
         console.log(outputData);
     }
 // function output(params) {
